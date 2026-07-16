@@ -1,0 +1,11 @@
+Landing Page
+Login
+Register
+Dashboard
+Customer
+Vendor
+Items
+Inventory
+Sales
+Purchase
+Invoice

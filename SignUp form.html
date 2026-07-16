@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SignUp Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+
+
+<body style="background: url('main\ hero\ image.png');">
+
+    <div class="container mt-5 ">
+
+        <div class="row d-flex justify-content-center ">
+            <div class="col-6 rounded p-4 bg-white border">
+                <h1 class="text-center text-primary mb-5">SignUp</h1>
+                <form>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="name" class="form-label">Full Name:</label>
+                            <input class="form-control" type="text" id="name">
+                            <p style="font-size: 12px; margin-top: 3px;" id="nameError"></p>
+                        </div>
+
+                        <div class="col-6">
+                            <label for="phonenumber" class="form-label">Mobile</label>
+                            <input class="form-control" type="text" id="phonenumber">
+                            <p style="font-size: 12px; margin-top: 3px;" id="phoneError"></p>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <label for="username" class="form-label">Username:</label>
+                        <input class="form-control" type="text" id="username">
+                        <p style="font-size: 12px; margin-top: 3px;" id="userError"></p>
+                    </div>
+
+                    <div>
+                        <label for="email" class="form-label">Email:</label>
+                        <input class="form-control" type="text" id="email">
+                        <p style="font-size: 12px; margin-top: 3px;" id="emailError"></p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="password" class="form-label">Password:</label>
+                            <input class="form-control" type="password" id="password">
+                            <p style="font-size: 12px; margin-top: 3px;" id="passwordError"></p>
+                        </div>
+
+                        <div class="col-6">
+                            <label class="form-label" for="password">Confirm Password</label>
+                            <input class="form-control" id="password2" type="password" class="form-control">
+                            <p style="font-size: 12px; margin-top: 3px;" id="password2Error"></p>
+                        </div>
+
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <a href="Login form.html" class="btn btn-primary w-75  px-5 py-2">Create
+                            Account</a>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <script>
+
+        document.getElementById("name").addEventListener("keyup", function () {
+            let name = this.value;
+
+            if (name == "") {
+                document.getElementById("nameError").innerHTML = "Name required";
+                document.getElementById("nameError").style.color = "red";
+                return;
+            }
+
+            let pattern = /^[A-Za-z ]+$/;
+
+            if (pattern.test(name)) {
+                document.getElementById("nameError").innerHTML = "";
+            } else {
+                document.getElementById("nameError").innerHTML = "Letters only allowed";
+                document.getElementById("nameError").style.color = "red";
+            }
+        });
+
+        document.getElementById("phonenumber").addEventListener("keyup", function () {
+            let phone = this.value;
+
+            if (phone == "") {
+                document.getElementById("phoneError").innerHTML = "Number required";
+                document.getElementById("userError").style.color = "red";
+                return;
+            }
+
+            let pattern = /^[0-9]{10}$/;
+
+            if (pattern.test(phone)) {
+                document.getElementById("phoneError").innerHTML = "";
+            } else {
+                document.getElementById("phoneError").innerHTML = "Must be exactly 10 digits";
+                document.getElementById("phoneError").style.color = "red";
+            }
+        });
+
+        document.getElementById("username").addEventListener("keyup", function () {
+            let username = this.value;
+
+            if (username == "") {
+                document.getElementById("userError").innerHTML = "Username required";
+                document.getElementById("userError").style.color = "red";
+                return;
+            }
+
+            let pattern = /^[a-z0-9]+$/;
+
+            if (pattern.test(username)) {
+                document.getElementById("userError").innerHTML = "";
+            } else {
+                document.getElementById("userError").innerHTML = "Only lowercase letters and numbers allowed";
+                document.getElementById("userError").style.color = "red";
+            }
+        });
+
+        document.getElementById("email").addEventListener("keyup", function () {
+            let email = this.value;
+
+            if (email == "") {
+                document.getElementById("emailError").innerHTML = "Email required";
+                document.getElementById("emailError").style.color = "red"
+                return;
+            }
+
+            if (email.includes("@")) {
+                document.getElementById("emailError").innerHTML = "";
+            } else {
+                document.getElementById("emailError").innerHTML = "Invalid Email";
+                document.getElementById("emailError").style.color = "red";
+            }
+        });
+
+        document.getElementById("password").addEventListener("keyup", function () {
+            let password = this.value;
+
+            if (password == "") {
+                document.getElementById("passwordError").innerHTML = "Password required";
+                document.getElementById("passwordError").style.color = "red";
+                return;
+            }
+
+            if (password.length >= 8) {
+                document.getElementById("passwordError").innerHTML = "";
+            } else {
+                document.getElementById("passwordError").innerHTML = "Password Minimum 8 Characters";
+                document.getElementById("passwordError").style.color = "red";
+            }
+            let confirmPass = document.getElementById("password2").value;
+            if (confirmPass !== "") {
+                checkPasswordMatch();
+            }
+
+        });
+
+
+        document.getElementById("password2").addEventListener("keyup", checkPasswordMatch);
+
+        function checkPasswordMatch() {
+            let password = document.getElementById("password").value;
+            let password2 = document.getElementById("password2").value;
+
+
+            if (password2 == "") {
+                document.getElementById("password2Error").innerHTML = "Confirm Password required";
+                document.getElementById("password2Error").style.color = "red";
+                return;
+            }
+
+            if (password !== password2) {
+                document.getElementById("password2Error").innerHTML = "Password Does Not Match";
+                document.getElementById("password2Error").style.color = "red";
+            } else {
+                document.getElementById("password2Error").innerHTML = "";
+            }
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
