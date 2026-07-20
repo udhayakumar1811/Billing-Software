@@ -12,10 +12,13 @@
 <body>
     <div class="container-fluid ">
         <div class="row py-2 fixed-top bg-white border-bottom shadow-sm">
-            <div class="col-12 text-start ms-4">
+            <div class="d-flex justify-content-between align-items-center ">
                 <a href="#home">
-                    <img src="png logo.png" alt="Brand Logo" class="img-fluid" style="max-width: 130px; height: auto;">
+                    <img src="png logo.png" alt="Brand Logo" class="img-fluid ms-4"
+                        style="max-width: 130px; height: auto;">
                 </a>
+
+                <button class="btn btn-outline-secondary me-4">Admin</button>
             </div>
         </div>
 
@@ -46,638 +49,788 @@
             </div>
 
             <div class="d-flex flex-column " style="border-left: 1px solid black; background-color: #f9fbfd;"">
-                <div class="mt-4 px-4">
-                    <div class="">
-                        <div>
-                            <h3>Inventory</h3>
-                            <nav class="small text-primary">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item "><a class="text-decoration-none"
-                                            href="Dashboard.html">Dashboard</a></li>
-                                    <li class="breadcrumb-item "><a class="text-decoration-none text-muted"
-                                            href="Inventory.html">Inventory</a></li>
-                                </ol>
-                            </nav>
-                        </div>
+                <div class=" mt-4 px-4">
+                <div class="">
+                    <div>
+                        <h3>Inventory</h3>
+                        <nav class="small text-primary">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item "><a class="text-decoration-none"
+                                        href="Dashboard.html">Dashboard</a></li>
+                                <li class="breadcrumb-item "><a class="text-decoration-none text-muted"
+                                        href="Inventory.html">Inventory</a></li>
+                            </ol>
+                        </nav>
                     </div>
-                    <div class="row mt-4 mx-1 pt-2">
+                </div>
+                <div class="row mt-4 mx-1 pt-2">
 
-                        <div class="col-4 ">
-                            <div class="card border shadow-sm rounded-4">
-                                <div class="card-body p-4">
-                                    <div class="d-flex align-items-center justify-content-between">
+                    <div class="col-4 ">
+                        <div class="card border shadow-sm rounded-4">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center justify-content-between">
 
-                                        <div class="d-flex align-items-center">
-                                            <div class="p-3 rounded-4 bg-primary bg-opacity-25 text-primary me-3 d-flex align-items-center justify-content-center"
-                                                style="width: 56px; height: 56px;">
-                                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-boxes" viewBox="0 0 16 16">
-  <path d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434zM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567zM7.5 9.933l-2.75 1.571v3.134l2.75-1.571zm1 3.134 2.75 1.571v-3.134L8.5 9.933zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567zm2.242-2.433V3.504L8.5 5.076V8.21zM7.5 8.21V5.076L4.75 3.504v3.134zM5.258 2.643 8 4.21l2.742-1.567L8 1.076zM15 9.933l-2.75 1.571v3.134L15 13.067zM3.75 14.638v-3.134L1 9.933v3.134z"/>
-</svg>
-                                            </div>
-                                            <div>
-                                                <p class="text-muted small fw-semibold mb-1">Stock List</p>
-                                                <h4 class="fw-bold text-dark mb-0">128</h4>
-                                                <p class="text-secondary small fw-semibold mb-1">Total Items</p>
-
-                                            </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-3 rounded-4 bg-primary bg-opacity-25 text-primary me-3 d-flex align-items-center justify-content-center"
+                                            style="width: 56px; height: 56px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                fill="currentColor" class="bi bi-boxes" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434zM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567zM7.5 9.933l-2.75 1.571v3.134l2.75-1.571zm1 3.134 2.75 1.571v-3.134L8.5 9.933zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567zm2.242-2.433V3.504L8.5 5.076V8.21zM7.5 8.21V5.076L4.75 3.504v3.134zM5.258 2.643 8 4.21l2.742-1.567L8 1.076zM15 9.933l-2.75 1.571v3.134L15 13.067zM3.75 14.638v-3.134L1 9.933v3.134z" />
+                                            </svg>
                                         </div>
-
                                         <div>
-                                            <div class="p-3 rounded-pill bg-primary bg-opacity-10 text-primary me-3 d-flex align-items-center justify-content-center"
-                                                style="width: 56px; height: 56px;">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-box" viewBox="0 0 16 16">
-  <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
-</svg>
-                                            </div>
-                                        </div>
+                                            <p class="text-muted small fw-semibold mb-1">Stock List</p>
+                                            <h4 class="fw-bold text-dark mb-0">128</h4>
+                                            <p class="text-secondary small fw-semibold mb-1">Total Items</p>
 
+                                        </div>
                                     </div>
-                                </div>
-                                <hr class="text-secondary opacity-25 p-0 mt-0 mb-0">
-                                <div
-                                    class="mb-2 mt-2 mx-4 text-primary fw-semibold small d-flex justify-content-between align-items-center">
-                                    <p class="m-0">View all items</p>
-                                    <p class="m-0 fs-5 fw-bold">></p>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="col-4 ">
-                            <div class="card border shadow-sm rounded-4">
-                                <div class="card-body p-4">
-                                    <div class="d-flex align-items-center justify-content-between">
-
-                                        <div class="d-flex align-items-center">
-                                            <div class="p-3 rounded-4 bg-warning bg-opacity-25 text-warning me-3 d-flex align-items-center justify-content-center"
-                                                style="width: 56px; height: 56px;">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
-  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-</svg>
-                                            </div>
-                                            <div>
-                                                <p class="text-muted small fw-semibold mb-1">Low Stock</p>
-                                                <h4 class="fw-bold text-dark mb-0">128</h4>
-                                                <p class="text-secondary small fw-semibold mb-1">Items running low</p>
-
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div class="p-3 rounded-pill bg-warning bg-opacity-10 text-warning me-3 d-flex align-items-center justify-content-center"
-                                                style="width: 56px; height: 56px;">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle" viewBox="0 0 16 16">
-  <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"/>
-  <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
-</svg>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <hr class="text-secondary opacity-25 p-0 mt-0 mb-0">
-                                <div
-                                    class="mb-2 mt-2 mx-4 text-warning fw-semibold small d-flex justify-content-between align-items-center">
-                                    <p class="m-0">View low stock</p>
-                                    <p class="m-0 fs-5 fw-bold">></p>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <div class="col-4 ">
-                            <div class="card border shadow-sm rounded-4">
-                                <div class="card-body p-4">
-                                    <div class="d-flex align-items-center justify-content-between">
-
-                                        <div class="d-flex align-items-center">
-                                            <div class="p-3 rounded-4 bg-danger bg-opacity-25 text-danger me-3 d-flex align-items-center justify-content-center"
-                                                style="width: 56px; height: 56px;">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-stack" viewBox="0 0 16 16">
-  <path d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.6.6 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.6.6 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.6.6 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535z"/>
-  <path d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.6.6 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0z"/>
-</svg>
-                                            </div>
-                                            <div>
-                                                <p class="text-muted small fw-semibold mb-1">Out of Stock</p>
-                                                <h4 class="fw-bold text-dark mb-0">18</h4>
-                                                <p class="text-secondary small fw-semibold mb-1">Items out of stock</p>
-
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div class="p-3 rounded-pill bg-danger bg-opacity-10 text-danger me-3 d-flex align-items-center justify-content-center"
-                                                style="width: 56px; height: 56px;">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-  <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
-</svg>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <hr class="text-secondary opacity-25 p-0 mt-0 mb-0">
-                                <div
-                                    class="mb-2 mt-2 mx-4 text-danger fw-semibold small d-flex justify-content-between align-items-center">
-                                    <p class="m-0">View out of stock</p>
-                                    <p class="m-0 fs-5 fw-bold">></p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-
-                    <div class="mt-4 mx-3 rounded-4 border shadow-sm">
-                        <div class="container mt-3">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <ul class="nav nav-tabs">
-                                    <li class="nav-item ">
-                                        <button class="nav-link active " type="button" data-bs-toggle="tab"
-                                            data-bs-target="#StockList">
-                                            Stock List
-                                        </button>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <button class="nav-link" type="button" data-bs-toggle="tab"
-                                            data-bs-target="#LowStock">
-                                            Low Stock
-                                        </button>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <button class="nav-link" type="button" data-bs-toggle="tab"
-                                            data-bs-target="#OutOfStock">
-                                            Out of Stock
-                                        </button>
-                                    </li>
-
-                                </ul>
-                                <div class="mb-3 me-3">
-                                    <button class="btn btn-outline-secondary">Download</button>
-                                </div>
-                            </div>
-                            <div class="tab-content">
-                                <div class="tab-pane show fade active" id="StockList">
                                     <div>
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th class="text-muted small bg-primary bg-opacity-10 px-3">S.No</th>
-                                                    <th class="text-muted small bg-primary bg-opacity-10">Image</th>
-                                                    <th class="text-muted small bg-primary bg-opacity-10">Item Name</th>
-                                                    <th class="text-muted small bg-primary bg-opacity-10">Category</th>
-                                                    <th class="text-muted small bg-primary bg-opacity-10">Price(₹)</th>
-                                                    <th class="text-muted small bg-primary bg-opacity-10">Stock</th>
-                                                    <th class="text-muted small bg-primary bg-opacity-10 ps-4">Status
-                                                    </th>
-                                                    <th class="text-muted small bg-primary bg-opacity-10 text-center">
-                                                        Actions</th>
-                                                </tr>
-                                            </thead>
-
-                                            <tbody class="text-dark small">
-
-                                                <tr>
-                                                    <td class="px-3 text-secondary">1</td>
-                                                    <td class="align-middle"><img src="" class="img-fluid rounded"
-                                                            style="width: 40px; height: 40px; object-fit: cover;"></td>
-                                                    <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
-                                                    <td class="text-secondary">Laptops</td>
-                                                    <td class="text-secondary">49,990.00</td>
-                                                    <td class="text-secondary">15</td>
-                                                    <td>
-                                                        <span
-                                                            class="badge bg-success bg-opacity-10 text-success rounded-pill px-3 py-2 fw-semibold">In
-                                                            Stock</span>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-center gap-2">
-                                                            <button class="btn btn-sm btn-outline-primary">Edit</button>
-                                                            <button
-                                                                class="btn btn-sm btn-outline-danger">Delete</button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="px-3 text-secondary">1</td>
-                                                    <td class="align-middle"><img src="" class="img-fluid rounded"
-                                                            style="width: 40px; height: 40px; object-fit: cover;"></td>
-                                                    <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
-                                                    <td class="text-secondary">Laptops</td>
-                                                    <td class="text-secondary">49,990.00</td>
-                                                    <td class="text-secondary">15</td>
-                                                    <td>
-                                                        <span
-                                                            class="badge bg-success bg-opacity-10 text-success rounded-pill px-3 py-2 fw-semibold">In
-                                                            Stock</span>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-center gap-2">
-                                                            <button class="btn btn-sm btn-outline-primary">Edit</button>
-                                                            <button
-                                                                class="btn btn-sm btn-outline-danger">Delete</button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="px-3 text-secondary">1</td>
-                                                    <td class="align-middle"><img src="" class="img-fluid rounded"
-                                                            style="width: 40px; height: 40px; object-fit: cover;"></td>
-                                                    <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
-                                                    <td class="text-secondary">Laptops</td>
-                                                    <td class="text-secondary">49,990.00</td>
-                                                    <td class="text-secondary">15</td>
-                                                    <td>
-                                                        <span
-                                                            class="badge bg-success bg-opacity-10 text-success rounded-pill px-3 py-2 fw-semibold">In
-                                                            Stock</span>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-center gap-2">
-                                                            <button class="btn btn-sm btn-outline-primary">Edit</button>
-                                                            <button
-                                                                class="btn btn-sm btn-outline-danger">Delete</button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="px-3 text-secondary">1</td>
-                                                    <td class="align-middle"><img src="" class="img-fluid rounded"
-                                                            style="width: 40px; height: 40px; object-fit: cover;"></td>
-                                                    <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
-                                                    <td class="text-secondary">Laptops</td>
-                                                    <td class="text-secondary">49,990.00</td>
-                                                    <td class="text-secondary">15</td>
-                                                    <td>
-                                                        <span
-                                                            class="badge bg-success bg-opacity-10 text-success rounded-pill px-3 py-2 fw-semibold">In
-                                                            Stock</span>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-center gap-2">
-                                                            <button class="btn btn-sm btn-outline-primary">Edit</button>
-                                                            <button
-                                                                class="btn btn-sm btn-outline-danger">Delete</button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="px-3 text-secondary">1</td>
-                                                    <td class="align-middle"><img src="" class="img-fluid rounded"
-                                                            style="width: 40px; height: 40px; object-fit: cover;"></td>
-                                                    <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
-                                                    <td class="text-secondary">Laptops</td>
-                                                    <td class="text-secondary">49,990.00</td>
-                                                    <td class="text-secondary">15</td>
-                                                    <td>
-                                                        <span
-                                                            class="badge bg-success bg-opacity-10 text-success rounded-pill px-3 py-2 fw-semibold">In
-                                                            Stock</span>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-center gap-2">
-                                                            <button class="btn btn-sm btn-outline-primary">Edit</button>
-                                                            <button
-                                                                class="btn btn-sm btn-outline-danger">Delete</button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-
-
-                                                <tr>
-                                                    <td class="px-3 text-secondary">6</td>
-                                                    <td class="align-middle"><img src="" class="img-fluid rounded"
-                                                            style="width: 40px; height: 40px; object-fit: cover;"></td>
-                                                    <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
-                                                    <td class="text-secondary">Laptops</td>
-                                                    <td class="text-secondary">49,990.00</td>
-                                                    <td class="text-secondary">15</td>
-                                                    <td>
-                                                        <span
-                                                            class="badge bg-success bg-opacity-10 text-success rounded-pill px-3 py-2 fw-semibold">In
-                                                            Stock</span>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-center gap-2">
-                                                            <button class="btn btn-sm btn-outline-primary">Edit</button>
-                                                            <button
-                                                                class="btn btn-sm btn-outline-danger">Delete</button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-
-
-                                                <tr>
-                                                    <td class="px-3 text-secondary">7</td>
-                                                    <td class="align-middle"><img src="" class="img-fluid rounded"
-                                                            style="width: 40px; height: 40px; object-fit: cover;"></td>
-                                                    <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
-                                                    <td class="text-secondary">Laptops</td>
-                                                    <td class="text-secondary">49,990.00</td>
-                                                    <td class="text-secondary">15</td>
-                                                    <td>
-                                                        <span
-                                                            class="badge bg-success bg-opacity-10 text-success rounded-pill px-3 py-2 fw-semibold">In
-                                                            Stock</span>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-center gap-2">
-                                                            <button class="btn btn-sm btn-outline-primary">Edit</button>
-                                                            <button
-                                                                class="btn btn-sm btn-outline-danger">Delete</button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-
-
-                                            </tbody>
-                                        </table>
+                                        <div class="p-3 rounded-pill bg-primary bg-opacity-10 text-primary me-3 d-flex align-items-center justify-content-center"
+                                            style="width: 56px; height: 56px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                fill="currentColor" class="bi bi-box" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z" />
+                                            </svg>
+                                        </div>
                                     </div>
+
                                 </div>
-
-                                <div class="tab-pane  fade" id="LowStock">
-                                    <div>
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th class="text-muted small bg-primary bg-opacity-10 px-3">S.No</th>
-                                                    <th class="text-muted small bg-primary bg-opacity-10">Image</th>
-                                                    <th class="text-muted small bg-primary bg-opacity-10">Item Name</th>
-                                                    <th class="text-muted small bg-primary bg-opacity-10">Category</th>
-                                                    <th class="text-muted small bg-primary bg-opacity-10">Price(₹)</th>
-                                                    <th class="text-muted small bg-primary bg-opacity-10">Stock</th>
-                                                    <th class="text-muted small bg-primary bg-opacity-10 ps-4">Status
-                                                    </th>
-                                                    <th class="text-muted small bg-primary bg-opacity-10 text-center">
-                                                        Actions</th>
-                                                </tr>
-                                            </thead>
-
-                                            <tbody class="text-dark small">
-
-                                                <tr>
-                                                    <td class="px-3 text-secondary">1</td>
-                                                    <td class="align-middle"><img src="" class="img-fluid rounded"
-                                                            style="width: 40px; height: 40px; object-fit: cover;"></td>
-                                                    <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
-                                                    <td class="text-secondary">Laptops</td>
-                                                    <td class="text-secondary">49,990.00</td>
-                                                    <td class="text-secondary">15</td>
-                                                    <td>
-                                                        <span
-                                                            class="badge bg-warning bg-opacity-10 text-warning rounded-pill px-3 py-2 fw-semibold">Low
-                                                            Stock</span>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-center gap-2">
-                                                            <button class="btn btn-sm btn-outline-primary">Edit</button>
-                                                            <button
-                                                                class="btn btn-sm btn-outline-danger">Delete</button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="px-3 text-secondary">1</td>
-                                                    <td class="align-middle"><img src="" class="img-fluid rounded"
-                                                            style="width: 40px; height: 40px; object-fit: cover;"></td>
-                                                    <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
-                                                    <td class="text-secondary">Laptops</td>
-                                                    <td class="text-secondary">49,990.00</td>
-                                                    <td class="text-secondary">15</td>
-                                                    <td>
-                                                        <span
-                                                            class="badge bg-warning bg-opacity-10 text-warning rounded-pill px-3 py-2 fw-semibold">Low
-                                                            Stock</span>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-center gap-2">
-                                                            <button class="btn btn-sm btn-outline-primary">Edit</button>
-                                                            <button
-                                                                class="btn btn-sm btn-outline-danger">Delete</button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="px-3 text-secondary">1</td>
-                                                    <td class="align-middle"><img src="" class="img-fluid rounded"
-                                                            style="width: 40px; height: 40px; object-fit: cover;"></td>
-                                                    <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
-                                                    <td class="text-secondary">Laptops</td>
-                                                    <td class="text-secondary">49,990.00</td>
-                                                    <td class="text-secondary">15</td>
-                                                    <td>
-                                                        <span
-                                                            class="badge bg-warning bg-opacity-10 text-warning rounded-pill px-3 py-2 fw-semibold">Low
-                                                            Stock</span>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-center gap-2">
-                                                            <button class="btn btn-sm btn-outline-primary">Edit</button>
-                                                            <button
-                                                                class="btn btn-sm btn-outline-danger">Delete</button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="px-3 text-secondary">1</td>
-                                                    <td class="align-middle"><img src="" class="img-fluid rounded"
-                                                            style="width: 40px; height: 40px; object-fit: cover;"></td>
-                                                    <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
-                                                    <td class="text-secondary">Laptops</td>
-                                                    <td class="text-secondary">49,990.00</td>
-                                                    <td class="text-secondary">15</td>
-                                                    <td>
-                                                        <span
-                                                            class="badge bg-warning bg-opacity-10 text-warning rounded-pill px-3 py-2 fw-semibold">Low
-                                                            Stock</span>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-center gap-2">
-                                                            <button class="btn btn-sm btn-outline-primary">Edit</button>
-                                                            <button
-                                                                class="btn btn-sm btn-outline-danger">Delete</button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="px-3 text-secondary">1</td>
-                                                    <td class="align-middle"><img src="" class="img-fluid rounded"
-                                                            style="width: 40px; height: 40px; object-fit: cover;"></td>
-                                                    <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
-                                                    <td class="text-secondary">Laptops</td>
-                                                    <td class="text-secondary">49,990.00</td>
-                                                    <td class="text-secondary">15</td>
-                                                    <td>
-                                                        <span
-                                                            class="badge bg-warning bg-opacity-10 text-warning rounded-pill px-3 py-2 fw-semibold">Low
-                                                            Stock</span>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-center gap-2">
-                                                            <button class="btn btn-sm btn-outline-primary">Edit</button>
-                                                            <button
-                                                                class="btn btn-sm btn-outline-danger">Delete</button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-
-
-
-
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-
-                                <div class="tab-pane  fade" id="OutOfStock">
-                                    <div>
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th class="text-muted small bg-primary bg-opacity-10 px-3">S.No</th>
-                                                    <th class="text-muted small bg-primary bg-opacity-10">Image</th>
-                                                    <th class="text-muted small bg-primary bg-opacity-10">Item Name</th>
-                                                    <th class="text-muted small bg-primary bg-opacity-10">Category</th>
-                                                    <th class="text-muted small bg-primary bg-opacity-10">Price(₹)</th>
-                                                    <th class="text-muted small bg-primary bg-opacity-10">Stock</th>
-                                                    <th class="text-muted small bg-primary bg-opacity-10 ps-4">Status
-                                                    </th>
-                                                    <th class="text-muted small bg-primary bg-opacity-10 text-center">
-                                                        Actions</th>
-                                                </tr>
-                                            </thead>
-
-                                            <tbody class="text-dark small">
-
-                                                <tr>
-                                                    <td class="px-3 text-secondary">1</td>
-                                                    <td class="align-middle"><img src="" class="img-fluid rounded"
-                                                            style="width: 40px; height: 40px; object-fit: cover;"></td>
-                                                    <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
-                                                    <td class="text-secondary">Laptops</td>
-                                                    <td class="text-secondary">49,990.00</td>
-                                                    <td class="text-secondary">15</td>
-                                                    <td>
-                                                        <span
-                                                            class="badge bg-danger bg-opacity-10 text-danger rounded-pill px-3 py-2 fw-semibold">Out
-                                                            of
-                                                            Stock</span>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-center gap-2">
-                                                            <button class="btn btn-sm btn-outline-primary">Edit</button>
-                                                            <button
-                                                                class="btn btn-sm btn-outline-danger">Delete</button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="px-3 text-secondary">1</td>
-                                                    <td class="align-middle"><img src="" class="img-fluid rounded"
-                                                            style="width: 40px; height: 40px; object-fit: cover;"></td>
-                                                    <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
-                                                    <td class="text-secondary">Laptops</td>
-                                                    <td class="text-secondary">49,990.00</td>
-                                                    <td class="text-secondary">15</td>
-                                                    <td>
-                                                        <span
-                                                            class="badge bg-danger bg-opacity-10 text-danger rounded-pill px-3 py-2 fw-semibold">Out
-                                                            of
-                                                            Stock</span>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-center gap-2">
-                                                            <button class="btn btn-sm btn-outline-primary">Edit</button>
-                                                            <button
-                                                                class="btn btn-sm btn-outline-danger">Delete</button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="px-3 text-secondary">1</td>
-                                                    <td class="align-middle"><img src="" class="img-fluid rounded"
-                                                            style="width: 40px; height: 40px; object-fit: cover;"></td>
-                                                    <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
-                                                    <td class="text-secondary">Laptops</td>
-                                                    <td class="text-secondary">49,990.00</td>
-                                                    <td class="text-secondary">15</td>
-                                                    <td>
-                                                        <span
-                                                            class="badge bg-danger bg-opacity-10 text-danger rounded-pill px-3 py-2 fw-semibold">Out
-                                                            of
-                                                            Stock</span>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-center gap-2">
-                                                            <button class="btn btn-sm btn-outline-primary">Edit</button>
-                                                            <button
-                                                                class="btn btn-sm btn-outline-danger">Delete</button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="px-3 text-secondary">1</td>
-                                                    <td class="align-middle"><img src="" class="img-fluid rounded"
-                                                            style="width: 40px; height: 40px; object-fit: cover;"></td>
-                                                    <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
-                                                    <td class="text-secondary">Laptops</td>
-                                                    <td class="text-secondary">49,990.00</td>
-                                                    <td class="text-secondary">15</td>
-                                                    <td>
-                                                        <span
-                                                            class="badge bg-danger bg-opacity-10 text-danger rounded-pill px-3 py-2 fw-semibold">Out
-                                                            of
-                                                            Stock</span>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-center gap-2">
-                                                            <button class="btn btn-sm btn-outline-primary">Edit</button>
-                                                            <button
-                                                                class="btn btn-sm btn-outline-danger">Delete</button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-
-
-
-
-
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
+                            </div>
+                            <hr class="text-secondary opacity-25 p-0 mt-0 mb-0">
+                            <div
+                                class="mb-2 mt-2 mx-4 text-primary fw-semibold small d-flex justify-content-between align-items-center">
+                                <p class="m-0">View all items</p>
+                                <p class="m-0 fs-5 fw-bold">></p>
                             </div>
                         </div>
                     </div>
 
+                    <div class="col-4 ">
+                        <div class="card border shadow-sm rounded-4">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center justify-content-between">
+
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-3 rounded-4 bg-warning bg-opacity-25 text-warning me-3 d-flex align-items-center justify-content-center"
+                                            style="width: 56px; height: 56px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <p class="text-muted small fw-semibold mb-1">Low Stock</p>
+                                            <h4 class="fw-bold text-dark mb-0">128</h4>
+                                            <p class="text-secondary small fw-semibold mb-1">Items running low</p>
+
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="p-3 rounded-pill bg-warning bg-opacity-10 text-warning me-3 d-flex align-items-center justify-content-center"
+                                            style="width: 56px; height: 56px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                fill="currentColor" class="bi bi-exclamation-triangle"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z" />
+                                                <path
+                                                    d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <hr class="text-secondary opacity-25 p-0 mt-0 mb-0">
+                            <div
+                                class="mb-2 mt-2 mx-4 text-warning fw-semibold small d-flex justify-content-between align-items-center">
+                                <p class="m-0">View low stock</p>
+                                <p class="m-0 fs-5 fw-bold">></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-4 ">
+                        <div class="card border shadow-sm rounded-4">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center justify-content-between">
+
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-3 rounded-4 bg-danger bg-opacity-25 text-danger me-3 d-flex align-items-center justify-content-center"
+                                            style="width: 56px; height: 56px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                fill="currentColor" class="bi bi-stack" viewBox="0 0 16 16">
+                                                <path
+                                                    d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.6.6 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.6.6 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.6.6 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535z" />
+                                                <path
+                                                    d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.6.6 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0z" />
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <p class="text-muted small fw-semibold mb-1">Out of Stock</p>
+                                            <h4 class="fw-bold text-dark mb-0">18</h4>
+                                            <p class="text-secondary small fw-semibold mb-1">Items out of stock</p>
+
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="p-3 rounded-pill bg-danger bg-opacity-10 text-danger me-3 d-flex align-items-center justify-content-center"
+                                            style="width: 56px; height: 56px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <hr class="text-secondary opacity-25 p-0 mt-0 mb-0">
+                            <div
+                                class="mb-2 mt-2 mx-4 text-danger fw-semibold small d-flex justify-content-between align-items-center">
+                                <p class="m-0">View out of stock</p>
+                                <p class="m-0 fs-5 fw-bold">></p>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
 
 
 
-            </div>
-        </div>
+                <div class="mt-4 mx-3 rounded-4 border shadow-sm">
+                    <div class="container mt-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item ">
+                                    <button class="nav-link active " type="button" data-bs-toggle="tab"
+                                        data-bs-target="#StockList">
+                                        Stock List
+                                    </button>
+                                </li>
 
-        <div class="row py-2 bg-white border-top">
-            <div class="col-12 text-center">
-                <p>@ 2026 BillMaster. All rights reserved.</p>
+                                <li class="nav-item">
+                                    <button class="nav-link" type="button" data-bs-toggle="tab"
+                                        data-bs-target="#LowStock">
+                                        Low Stock
+                                    </button>
+                                </li>
+
+                                <li class="nav-item">
+                                    <button class="nav-link" type="button" data-bs-toggle="tab"
+                                        data-bs-target="#OutOfStock">
+                                        Out of Stock
+                                    </button>
+                                </li>
+
+                            </ul>
+                            <div class="mb-3 me-3">
+                                <button class="btn btn-outline-secondary">Download</button>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-pane show fade active" id="StockList">
+                                <div>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-muted small bg-primary bg-opacity-10 px-3">S.No</th>
+                                                <th class="text-muted small bg-primary bg-opacity-10">Image</th>
+                                                <th class="text-muted small bg-primary bg-opacity-10">Item Name</th>
+                                                <th class="text-muted small bg-primary bg-opacity-10">Category</th>
+                                                <th class="text-muted small bg-primary bg-opacity-10">Price(₹)</th>
+                                                <th class="text-muted small bg-primary bg-opacity-10">Stock</th>
+                                                <th class="text-muted small bg-primary bg-opacity-10 ps-4">Status
+                                                </th>
+                                                <th class="text-muted small bg-primary bg-opacity-10 text-center">
+                                                    Actions</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody class="text-dark small">
+
+                                            <tr>
+                                                <td class="px-3 text-secondary">1</td>
+                                                <td class="align-middle"><img src="" class="img-fluid rounded"
+                                                        style="width: 40px; height: 40px; object-fit: cover;"></td>
+                                                <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
+                                                <td class="text-secondary">Laptops</td>
+                                                <td class="text-secondary">49,990.00</td>
+                                                <td class="text-secondary">15</td>
+                                                <td>
+                                                    <span
+                                                        class="badge bg-success bg-opacity-10 text-success rounded-pill px-3 py-2 fw-semibold">In
+                                                        Stock</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center gap-2">
+                                                        <button class="btn btn-sm btn-outline-primary">Edit</button>
+                                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="px-3 text-secondary">1</td>
+                                                <td class="align-middle"><img src="" class="img-fluid rounded"
+                                                        style="width: 40px; height: 40px; object-fit: cover;"></td>
+                                                <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
+                                                <td class="text-secondary">Laptops</td>
+                                                <td class="text-secondary">49,990.00</td>
+                                                <td class="text-secondary">15</td>
+                                                <td>
+                                                    <span
+                                                        class="badge bg-success bg-opacity-10 text-success rounded-pill px-3 py-2 fw-semibold">In
+                                                        Stock</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center gap-2">
+                                                        <button class="btn btn-sm btn-outline-primary">Edit</button>
+                                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="px-3 text-secondary">1</td>
+                                                <td class="align-middle"><img src="" class="img-fluid rounded"
+                                                        style="width: 40px; height: 40px; object-fit: cover;"></td>
+                                                <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
+                                                <td class="text-secondary">Laptops</td>
+                                                <td class="text-secondary">49,990.00</td>
+                                                <td class="text-secondary">15</td>
+                                                <td>
+                                                    <span
+                                                        class="badge bg-success bg-opacity-10 text-success rounded-pill px-3 py-2 fw-semibold">In
+                                                        Stock</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center gap-2">
+                                                        <button class="btn btn-sm btn-outline-primary">Edit</button>
+                                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="px-3 text-secondary">1</td>
+                                                <td class="align-middle"><img src="" class="img-fluid rounded"
+                                                        style="width: 40px; height: 40px; object-fit: cover;"></td>
+                                                <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
+                                                <td class="text-secondary">Laptops</td>
+                                                <td class="text-secondary">49,990.00</td>
+                                                <td class="text-secondary">15</td>
+                                                <td>
+                                                    <span
+                                                        class="badge bg-danger bg-opacity-10 text-danger rounded-pill px-3 py-2 fw-semibold">Out
+                                                        of
+                                                        Stock</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center gap-2">
+                                                        <button class="btn btn-sm btn-outline-primary">Edit</button>
+                                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="px-3 text-secondary">1</td>
+                                                <td class="align-middle"><img src="" class="img-fluid rounded"
+                                                        style="width: 40px; height: 40px; object-fit: cover;"></td>
+                                                <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
+                                                <td class="text-secondary">Laptops</td>
+                                                <td class="text-secondary">49,990.00</td>
+                                                <td class="text-secondary">15</td>
+                                                <td>
+                                                    <span
+                                                        class="badge bg-success bg-opacity-10 text-success rounded-pill px-3 py-2 fw-semibold">In
+                                                        Stock</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center gap-2">
+                                                        <button class="btn btn-sm btn-outline-primary">Edit</button>
+                                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="px-3 text-secondary">1</td>
+                                                <td class="align-middle"><img src="" class="img-fluid rounded"
+                                                        style="width: 40px; height: 40px; object-fit: cover;"></td>
+                                                <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
+                                                <td class="text-secondary">Laptops</td>
+                                                <td class="text-secondary">49,990.00</td>
+                                                <td class="text-secondary">15</td>
+                                                <td>
+                                                    <span
+                                                        class="badge bg-warning bg-opacity-10 text-warning rounded-pill px-3 py-2 fw-semibold">Low
+                                                        Stock</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center gap-2">
+                                                        <button class="btn btn-sm btn-outline-primary">Edit</button>
+                                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="px-3 text-secondary">1</td>
+                                                <td class="align-middle"><img src="" class="img-fluid rounded"
+                                                        style="width: 40px; height: 40px; object-fit: cover;"></td>
+                                                <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
+                                                <td class="text-secondary">Laptops</td>
+                                                <td class="text-secondary">49,990.00</td>
+                                                <td class="text-secondary">15</td>
+                                                <td>
+                                                    <span
+                                                        class="badge bg-danger bg-opacity-10 text-danger rounded-pill px-3 py-2 fw-semibold">Out
+                                                        of
+                                                        Stock</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center gap-2">
+                                                        <button class="btn btn-sm btn-outline-primary">Edit</button>
+                                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="px-3 text-secondary">1</td>
+                                                <td class="align-middle"><img src="" class="img-fluid rounded"
+                                                        style="width: 40px; height: 40px; object-fit: cover;"></td>
+                                                <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
+                                                <td class="text-secondary">Laptops</td>
+                                                <td class="text-secondary">49,990.00</td>
+                                                <td class="text-secondary">15</td>
+                                                <td>
+                                                    <span
+                                                        class="badge bg-success bg-opacity-10 text-success rounded-pill px-3 py-2 fw-semibold">In
+                                                        Stock</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center gap-2">
+                                                        <button class="btn btn-sm btn-outline-primary">Edit</button>
+                                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="px-3 text-secondary">1</td>
+                                                <td class="align-middle"><img src="" class="img-fluid rounded"
+                                                        style="width: 40px; height: 40px; object-fit: cover;"></td>
+                                                <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
+                                                <td class="text-secondary">Laptops</td>
+                                                <td class="text-secondary">49,990.00</td>
+                                                <td class="text-secondary">15</td>
+                                                <td>
+                                                    <span
+                                                        class="badge bg-warning bg-opacity-10 text-warning rounded-pill px-3 py-2 fw-semibold">Low
+                                                        Stock</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center gap-2">
+                                                        <button class="btn btn-sm btn-outline-primary">Edit</button>
+                                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="px-3 text-secondary">1</td>
+                                                <td class="align-middle"><img src="" class="img-fluid rounded"
+                                                        style="width: 40px; height: 40px; object-fit: cover;"></td>
+                                                <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
+                                                <td class="text-secondary">Laptops</td>
+                                                <td class="text-secondary">49,990.00</td>
+                                                <td class="text-secondary">15</td>
+                                                <td>
+                                                    <span
+                                                        class="badge bg-danger bg-opacity-10 text-danger rounded-pill px-3 py-2 fw-semibold">Out
+                                                        of
+                                                        Stock</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center gap-2">
+                                                        <button class="btn btn-sm btn-outline-primary">Edit</button>
+                                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td class="px-3 text-secondary">6</td>
+                                                <td class="align-middle"><img src="" class="img-fluid rounded"
+                                                        style="width: 40px; height: 40px; object-fit: cover;"></td>
+                                                <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
+                                                <td class="text-secondary">Laptops</td>
+                                                <td class="text-secondary">49,990.00</td>
+                                                <td class="text-secondary">15</td>
+                                                <td>
+                                                    <span
+                                                        class="badge bg-success bg-opacity-10 text-success rounded-pill px-3 py-2 fw-semibold">In
+                                                        Stock</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center gap-2">
+                                                        <button class="btn btn-sm btn-outline-primary">Edit</button>
+                                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="px-3 text-secondary">1</td>
+                                                <td class="align-middle"><img src="" class="img-fluid rounded"
+                                                        style="width: 40px; height: 40px; object-fit: cover;"></td>
+                                                <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
+                                                <td class="text-secondary">Laptops</td>
+                                                <td class="text-secondary">49,990.00</td>
+                                                <td class="text-secondary">15</td>
+                                                <td>
+                                                    <span
+                                                        class="badge bg-warning bg-opacity-10 text-warning rounded-pill px-3 py-2 fw-semibold">Low
+                                                        Stock</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center gap-2">
+                                                        <button class="btn btn-sm btn-outline-primary">Edit</button>
+                                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="px-3 text-secondary">1</td>
+                                                <td class="align-middle"><img src="" class="img-fluid rounded"
+                                                        style="width: 40px; height: 40px; object-fit: cover;"></td>
+                                                <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
+                                                <td class="text-secondary">Laptops</td>
+                                                <td class="text-secondary">49,990.00</td>
+                                                <td class="text-secondary">15</td>
+                                                <td>
+                                                    <span
+                                                        class="badge bg-danger bg-opacity-10 text-danger rounded-pill px-3 py-2 fw-semibold">Out
+                                                        of
+                                                        Stock</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center gap-2">
+                                                        <button class="btn btn-sm btn-outline-primary">Edit</button>
+                                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td class="px-3 text-secondary">7</td>
+                                                <td class="align-middle"><img src="" class="img-fluid rounded"
+                                                        style="width: 40px; height: 40px; object-fit: cover;"></td>
+                                                <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
+                                                <td class="text-secondary">Laptops</td>
+                                                <td class="text-secondary">49,990.00</td>
+                                                <td class="text-secondary">15</td>
+                                                <td>
+                                                    <span
+                                                        class="badge bg-success bg-opacity-10 text-success rounded-pill px-3 py-2 fw-semibold">In
+                                                        Stock</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center gap-2">
+                                                        <button class="btn btn-sm btn-outline-primary">Edit</button>
+                                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane  fade" id="LowStock">
+                                <div>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-muted small bg-primary bg-opacity-10 px-3">S.No</th>
+                                                <th class="text-muted small bg-primary bg-opacity-10">Image</th>
+                                                <th class="text-muted small bg-primary bg-opacity-10">Item Name</th>
+                                                <th class="text-muted small bg-primary bg-opacity-10">Category</th>
+                                                <th class="text-muted small bg-primary bg-opacity-10">Price(₹)</th>
+                                                <th class="text-muted small bg-primary bg-opacity-10">Stock</th>
+                                                <th class="text-muted small bg-primary bg-opacity-10 ps-4">Status
+                                                </th>
+                                                <th class="text-muted small bg-primary bg-opacity-10 text-center">
+                                                    Actions</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody class="text-dark small">
+
+                                            <tr>
+                                                <td class="px-3 text-secondary">1</td>
+                                                <td class="align-middle"><img src="" class="img-fluid rounded"
+                                                        style="width: 40px; height: 40px; object-fit: cover;"></td>
+                                                <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
+                                                <td class="text-secondary">Laptops</td>
+                                                <td class="text-secondary">49,990.00</td>
+                                                <td class="text-secondary">15</td>
+                                                <td>
+                                                    <span
+                                                        class="badge bg-warning bg-opacity-10 text-warning rounded-pill px-3 py-2 fw-semibold">Low
+                                                        Stock</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center gap-2">
+                                                        <button class="btn btn-sm btn-outline-primary">Edit</button>
+                                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="px-3 text-secondary">1</td>
+                                                <td class="align-middle"><img src="" class="img-fluid rounded"
+                                                        style="width: 40px; height: 40px; object-fit: cover;"></td>
+                                                <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
+                                                <td class="text-secondary">Laptops</td>
+                                                <td class="text-secondary">49,990.00</td>
+                                                <td class="text-secondary">15</td>
+                                                <td>
+                                                    <span
+                                                        class="badge bg-warning bg-opacity-10 text-warning rounded-pill px-3 py-2 fw-semibold">Low
+                                                        Stock</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center gap-2">
+                                                        <button class="btn btn-sm btn-outline-primary">Edit</button>
+                                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="px-3 text-secondary">1</td>
+                                                <td class="align-middle"><img src="" class="img-fluid rounded"
+                                                        style="width: 40px; height: 40px; object-fit: cover;"></td>
+                                                <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
+                                                <td class="text-secondary">Laptops</td>
+                                                <td class="text-secondary">49,990.00</td>
+                                                <td class="text-secondary">15</td>
+                                                <td>
+                                                    <span
+                                                        class="badge bg-warning bg-opacity-10 text-warning rounded-pill px-3 py-2 fw-semibold">Low
+                                                        Stock</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center gap-2">
+                                                        <button class="btn btn-sm btn-outline-primary">Edit</button>
+                                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="px-3 text-secondary">1</td>
+                                                <td class="align-middle"><img src="" class="img-fluid rounded"
+                                                        style="width: 40px; height: 40px; object-fit: cover;"></td>
+                                                <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
+                                                <td class="text-secondary">Laptops</td>
+                                                <td class="text-secondary">49,990.00</td>
+                                                <td class="text-secondary">15</td>
+                                                <td>
+                                                    <span
+                                                        class="badge bg-warning bg-opacity-10 text-warning rounded-pill px-3 py-2 fw-semibold">Low
+                                                        Stock</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center gap-2">
+                                                        <button class="btn btn-sm btn-outline-primary">Edit</button>
+                                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="px-3 text-secondary">1</td>
+                                                <td class="align-middle"><img src="" class="img-fluid rounded"
+                                                        style="width: 40px; height: 40px; object-fit: cover;"></td>
+                                                <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
+                                                <td class="text-secondary">Laptops</td>
+                                                <td class="text-secondary">49,990.00</td>
+                                                <td class="text-secondary">15</td>
+                                                <td>
+                                                    <span
+                                                        class="badge bg-warning bg-opacity-10 text-warning rounded-pill px-3 py-2 fw-semibold">Low
+                                                        Stock</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center gap-2">
+                                                        <button class="btn btn-sm btn-outline-primary">Edit</button>
+                                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane  fade" id="OutOfStock">
+                                <div>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-muted small bg-primary bg-opacity-10 px-3">S.No</th>
+                                                <th class="text-muted small bg-primary bg-opacity-10">Image</th>
+                                                <th class="text-muted small bg-primary bg-opacity-10">Item Name</th>
+                                                <th class="text-muted small bg-primary bg-opacity-10">Category</th>
+                                                <th class="text-muted small bg-primary bg-opacity-10">Price(₹)</th>
+                                                <th class="text-muted small bg-primary bg-opacity-10">Stock</th>
+                                                <th class="text-muted small bg-primary bg-opacity-10 ps-4">Status
+                                                </th>
+                                                <th class="text-muted small bg-primary bg-opacity-10 text-center">
+                                                    Actions</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody class="text-dark small">
+
+                                            <tr>
+                                                <td class="px-3 text-secondary">1</td>
+                                                <td class="align-middle"><img src="" class="img-fluid rounded"
+                                                        style="width: 40px; height: 40px; object-fit: cover;"></td>
+                                                <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
+                                                <td class="text-secondary">Laptops</td>
+                                                <td class="text-secondary">49,990.00</td>
+                                                <td class="text-secondary">15</td>
+                                                <td>
+                                                    <span
+                                                        class="badge bg-danger bg-opacity-10 text-danger rounded-pill px-3 py-2 fw-semibold">Out
+                                                        of
+                                                        Stock</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center gap-2">
+                                                        <button class="btn btn-sm btn-outline-primary">Edit</button>
+                                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="px-3 text-secondary">1</td>
+                                                <td class="align-middle"><img src="" class="img-fluid rounded"
+                                                        style="width: 40px; height: 40px; object-fit: cover;"></td>
+                                                <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
+                                                <td class="text-secondary">Laptops</td>
+                                                <td class="text-secondary">49,990.00</td>
+                                                <td class="text-secondary">15</td>
+                                                <td>
+                                                    <span
+                                                        class="badge bg-danger bg-opacity-10 text-danger rounded-pill px-3 py-2 fw-semibold">Out
+                                                        of
+                                                        Stock</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center gap-2">
+                                                        <button class="btn btn-sm btn-outline-primary">Edit</button>
+                                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="px-3 text-secondary">1</td>
+                                                <td class="align-middle"><img src="" class="img-fluid rounded"
+                                                        style="width: 40px; height: 40px; object-fit: cover;"></td>
+                                                <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
+                                                <td class="text-secondary">Laptops</td>
+                                                <td class="text-secondary">49,990.00</td>
+                                                <td class="text-secondary">15</td>
+                                                <td>
+                                                    <span
+                                                        class="badge bg-danger bg-opacity-10 text-danger rounded-pill px-3 py-2 fw-semibold">Out
+                                                        of
+                                                        Stock</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center gap-2">
+                                                        <button class="btn btn-sm btn-outline-primary">Edit</button>
+                                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="px-3 text-secondary">1</td>
+                                                <td class="align-middle"><img src="" class="img-fluid rounded"
+                                                        style="width: 40px; height: 40px; object-fit: cover;"></td>
+                                                <td class="fw-semibold text-secondary">Dell Inspiron 15</td>
+                                                <td class="text-secondary">Laptops</td>
+                                                <td class="text-secondary">49,990.00</td>
+                                                <td class="text-secondary">15</td>
+                                                <td>
+                                                    <span
+                                                        class="badge bg-danger bg-opacity-10 text-danger rounded-pill px-3 py-2 fw-semibold">Out
+                                                        of
+                                                        Stock</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center gap-2">
+                                                        <button class="btn btn-sm btn-outline-primary">Edit</button>
+                                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
+
+
+
         </div>
+    </div>
+
+    <div class="row py-2 bg-white border-top">
+        <div class="col-12 text-center">
+            <p>@ 2026 BillMaster. All rights reserved.</p>
+        </div>
+    </div>
 
     </div>
 
